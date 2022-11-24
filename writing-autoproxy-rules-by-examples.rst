@@ -5,7 +5,7 @@
 Writing AutoProxy rules by examples
 ###################################
 
-http://lofrank.com/archives/441.html
+https://web.archive.org/web/20110520103723/https://autoproxy.org/rules
 
 Matching keyword with in HTTP URL
 =================================
@@ -51,3 +51,14 @@ Matching URL prefix
     *   All domains begins with ``http://example.com``
 
 *   Note: used for short link services like http://t.co.
+
+Regex
+===================
+``/^https?:\/\/[^\/]+example\.com/``
+
+
+Force no-proxy with "@@"
+===================
+``@@||no-proxy.com``
+
+* For all entries that match the "||no-proxy.com" rule , don't use proxy
